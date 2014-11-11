@@ -1,3 +1,4 @@
+@font-face { font-family: Inconsolata; src: url('Inconsolata.otf'); } 
 
 h1 {
 
@@ -6,6 +7,8 @@ h1 {
 }
 
 .blog-post {
+    
+    font-family: Inconsolata, sans-serif;
 
     margin-left: auto;
 
