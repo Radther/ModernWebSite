@@ -1,15 +1,21 @@
-@font-face { font-family: Inconsolata; src: url('Inconsolata.otf'); } 
+/*@font-face { font-family: Inconsolata; src: url('Inconsolata.otf'); } */
+
+* {
+    margin: 0;
+    padding: 0;
+}
 
 h1 {
 
     text-align: center;
-    color: #FFFFFF
+    color: #FFFFFF;
+    
 
 }
 
 .blog-post {
     
-    font-family: Inconsolata, sans-serif;
+    font-family: proxima-nova, sans-serif;
     
     font-size: 16px;
 
@@ -81,7 +87,7 @@ h1 {
 
 body {
 
-    font-family: sans-serif;
+    font-family: proxima-nova, sans-serif;
     
     background: #3f3f4a;
 
@@ -146,13 +152,16 @@ body {
 
     background: #009688;
 
-    margin: 0px;
 
     padding: 10px;
 
-    margin-left: auto;
+/*    margin-left: auto;*/
 
-    margin-right: auto;
+/*    margin-right: auto;*/
+    position: fixed;
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
 
 }
 
@@ -160,38 +169,61 @@ body {
 
 /*    float: right;*/
 
-    position: relative;
-
-    left: -50%;
-
     -webkit-align-content: center;
 
     -ms-flex-line-pack: center;
 
     align-content: center;
-
-    margin: 0 auto;
+/*    margin: auto;*/
+    
+    
 
 }
 
 #navBar {
 
-    position: relative;
 
-    left: 50%;
+/*
+    margin-left: auto;
+    margin-right: auto;
+*/
+/*    width: 200px;*/
+
+    text-align: center;
+    text-decoration: none;
+    
+
+/*    left: 50%;*/
 
 }
 
 #navcontainer ul li {
 
+    margin: auto;
+    list-style-type: none;
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: white;
     display: inline;
 
-    list-style-type: none;
-
-    padding: 0 20px;
+/*    padding: 0 20px;*/
 
     text-align: center;
 
+}
+
+#navcontainer ul li a{
+        text-decoration: none;
+    
+    color: black;
+}
+#navcontainer ul li a:hover{
+    padding: 25px;
+        -webkit-transition: padding .5s;
+        text-decoration: none;
+    
+    color: black;
 }
 
 .blog-post-link:link {
@@ -199,4 +231,3 @@ body {
     color: #000000;
 
 }
-
