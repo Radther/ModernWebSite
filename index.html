@@ -5,6 +5,10 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script type='text/javascript' src='javascript.js'></script>
     
+    <link rel="stylesheet" href="src/normalize.css">
+    <link rel="stylesheet" href="src/styles.css">
+    <link rel="import" href="webcomponent/github-card.html">
+    
     <script src="//use.typekit.net/rzo2flr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
 
@@ -12,7 +16,9 @@
 
 <body>
     <header>
+       
         <div class="header">
+            <github-card user="radther" class = "card"></github-card>
             <h1 id="Pagetitle">RDevBlog</h1>
             <div id="navcontainer">
                 <ul id="navBar">
@@ -24,7 +30,7 @@
                     </li>
                 </ul>
             </div>
-
+        
 
         </div>
 <!--
