@@ -2,12 +2,45 @@
 <html>
 <head>
     <title>RDevBlog</title>
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <script type='text/javascript' src='javascript.js'></script>
+    <link rel="stylesheet" type="text/css" href="styles-old.css" />
     
-    <link rel="stylesheet" href="src/normalize.css">
-    <link rel="stylesheet" href="src/styles.css">
-    <link rel="import" href="webcomponent/github-card.html">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js">
+</script>
+        <script>
+            $(document).on("scroll",function(){
+                if($(document).scrollTop()>100){
+                    $("navbar").addClass("scrolled");
+                    
+                } else{
+                    $("navbar").removeClass("scrolled");
+                }
+            });
+            
+$(document).ready(function() {
+   alert('hi');
+});
+</script>
+    
+
+<!--
+    
+    <script type="text/javascript">
+                        $(window).scroll(function(){
+
+                  var scroll = $(window).scrollTop();
+
+                  if (scroll > 0 ) {
+                    $('div.header').addClass('scrolled');
+                  }
+
+                  if (scroll <= 0 ) {
+                    $('div.header').removeClass('scrolled');
+                 }
+
+                });
+    </script>
+-->
+    
     
     <script src="//use.typekit.net/rzo2flr.js"></script>
     <script>try{Typekit.load();}catch(e){}</script>
@@ -15,24 +48,26 @@
 </head>
 
 <body>
+<!--   <github-card user="radther" class = "card"></github-card>-->
     <header>
        
-        <div class="header">
-            <github-card user="radther" class = "card"></github-card>
+        <navbar>
+            
             <h1 id="Pagetitle">RDevBlog</h1>
+            <nav>
             <div id="navcontainer">
                 <ul id="navBar">
-                    <li id="nav1"><a href="">Posts</a>
-                    </li>
-                    <li id="nav2"><a href="">Catagories</a>
-                    </li>
-                    <li id="nav3"><a href="">About</a>
-                    </li>
+                    <li id="nav1"><a href="">Posts</a></li>
+                    
+                    <li id="nav2"><a href="">Catagories</a></li>
+                    
+                    <li id="nav3"><a href="">About</a></li>
                 </ul>
             </div>
+            </nav>
         
 
-        </div>
+        </navbar>
 <!--
             <div id="navcontainer">
                 <ul id="navBar">
@@ -48,7 +83,7 @@
 
     </header>
     <div id="posts">
-        <article class="blog-post"><a class = "blog-post-link" href="post.html">
+        <article class="blog-post" id="first-post"><a class = "blog-post-link" href="post.html">
             <h2 class="post-title">
                 First Post
             </h2>
@@ -100,5 +135,11 @@
     </div>
 
 </body>
+
+<footer>
+    
+    <p>important information here</p>
+    
+</footer>
 
 </html>
